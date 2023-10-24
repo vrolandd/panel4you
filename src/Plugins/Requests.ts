@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 
-const BaseUrl: string = "https://corsproxy.io/?https://vps4you.hu/api.php";
+const BaseUrl: string = "https://vps4you.hu/api.php";
 
 async function Post(data?: any | undefined, config?: AxiosRequestConfig<any> | undefined): Promise<AxiosResponse<any, any>> {
     return axios.post(BaseUrl, 
